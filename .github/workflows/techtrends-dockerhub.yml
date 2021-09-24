@@ -36,4 +36,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: rap999a/tech-trends:${{ steps.buildid.outputs.BUILD_ID }}, rap999a/tech-trends:latest
+          tags: veselin032/tech-trends:${{ steps.buildid.outputs.BUILD_ID }}, veselin032/tech-trends:latest
