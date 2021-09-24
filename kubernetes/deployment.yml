@@ -19,7 +19,7 @@ spec:
         tag: latest
     spec:
       containers:
-      - image: rap999a/tech-trends:latest
+      - image: veselin032/tech-trends:latest
         imagePullPolicy: IfNotPresent
         name: techtrends
         ports:

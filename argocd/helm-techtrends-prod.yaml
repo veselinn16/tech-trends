@@ -13,5 +13,5 @@ spec:
       valueFiles:
       - values-prod.yml
     path: helm/
-    repoURL: https://github.com/rohanpurekar/tech-trends-udacity
+    repoURL: https://github.com/veselinn16/tech-trends
     targetRevision: HEAD
