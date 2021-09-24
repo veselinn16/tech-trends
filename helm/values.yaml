@@ -1,0 +1,27 @@
+namespace:
+  name: sandbox
+ 
+service:
+  port: 4111
+  targetPort: 3111
+  protocol: TCP
+  type: ClusterIP
+
+image:
+  repository: rap999a/tech-trends 
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+resources:
+  requests:
+    cpu: 250m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi
+
+containerport: 3111
+livenessProbe: /healthz
+readinessProbe: /healthz

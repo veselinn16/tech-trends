@@ -1,0 +1,9 @@
+apiVersion: v1
+name: techtrends-deployment
+description: Deploy techtrends application with all the manifests
+keywords:
+- techtrends 
+version: 1.0.0
+maintainers:
+- name: rohanpurekar 
+  email: rohanpurekar1@gmail.com

@@ -1,0 +1,32 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -d -p 7111:3111 --name techtrends-local techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+docker logs ab59a  # <- Container ID
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+INFO:werkzeug:07/09/2021, 02:29:17  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:07/09/2021, 02:29:33 172.17.0.1 - - [09/Jul/2021 02:29:33] "GET /asd HTTP/1.1" 404 -
+INFO:werkzeug:07/09/2021, 02:29:33 172.17.0.1 - - [09/Jul/2021 02:29:33] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:07/09/2021, 02:29:34 172.17.0.1 - - [09/Jul/2021 02:29:34] "GET /asd HTTP/1.1" 404 -
+INFO:werkzeug:07/09/2021, 02:29:34 172.17.0.1 - - [09/Jul/2021 02:29:34] "GET /asd HTTP/1.1" 404 -
+INFO:app:07/09/2021, 02:29:36,:The "About us " page is accessed
+INFO:app:07/09/2021, 02:29:36 The "About us " page is accessed
+INFO:werkzeug:07/09/2021, 02:29:36 172.17.0.1 - - [09/Jul/2021 02:29:36] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:07/09/2021, 02:29:39 172.17.0.1 - - [09/Jul/2021 02:29:39] "GET / HTTP/1.1" 200 -
+INFO:app:07/09/2021, 02:29:40,:Article "2020 CNCF Annual Report" retrieved!
+INFO:app:07/09/2021, 02:29:40 Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:07/09/2021, 02:29:40 172.17.0.1 - - [09/Jul/2021 02:29:40] "GET /1 HTTP/1.1" 200 -
+INFO:app:07/09/2021, 02:47:38,:Article "2020 CNCF Annual Report" retrieved!
+INFO:app:07/09/2021, 02:47:38 Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:07/09/2021, 02:47:38 172.17.0.1 - - [09/Jul/2021 02:47:38] "GET /1 HTTP/1.1" 200 -
+INFO:app:07/09/2021, 02:47:38,:Article "2020 CNCF Annual Report" retrieved!
+INFO:app:07/09/2021, 02:47:38 Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:07/09/2021, 02:47:38 172.17.0.1 - - [09/Jul/2021 02:47:38] "GET /1 HTTP/1.1" 200 -
