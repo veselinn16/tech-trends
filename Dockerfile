@@ -1,6 +1,6 @@
 FROM python:3.8
 
-LABEL dev="Rohan Purekar"
+LABEL dev="Veselin Tonev"
 
 COPY techtrends /app
 
